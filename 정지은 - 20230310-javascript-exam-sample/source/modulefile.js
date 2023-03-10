@@ -76,14 +76,15 @@ img.setAttribute('id','img');
 text.setAttribute('id','text');
 main.setAttribute('id','main');
 
-//-------------------------------
+
+//-----------------main 디자인
 root.style.width ='768px';
 root.style.height ='200vh';
 
 header.style.backgroundColor='#ccc';
 header.style.width ='100%';
 header.style.height ='10vh';
-header.textContent = "제목을 뭘로 할까? ";
+header.textContent = "하...";
 
 main.style.backgroundColor='cadetblue';
 main.style.width ='100%';
@@ -91,7 +92,7 @@ main.style.height='70%';
 
 container.style.display='flex';
 container.style.width ='100%';
-container.style.height='45%';
+container.style.height='36%';
 
 
 names.textContent='공욱재';
@@ -102,26 +103,107 @@ names.style.width ='100%';
 names.style.height='5%';
 
 img.style.width ='40%';
-img.style.height='100%';
+img.style.height='90%';
 
 text.style.width ='60%';
-text.style.height='100%';
+text.style.height='90%';
 
 footer.style.backgroundColor='salmon';
 footer.style.width ='100%';
-footer.style.height='20%';
+footer.style.height='15%';
 
 
-//---------//main 안에서만 움직이는 박스1, 박스2
+//---------//main 안에서만 움직이는 박스1,
 
 const box1 =document.createElement('div');
 main.appendChild(box1);
+box1.setAttribute('id','box1');
 
 box1.style.backgroundColor='pink';
-box1.style.width = '100%';
-box1.style.height ='70%';
+box1.style.width = '768px';
+box1.style.height ='50%';
 box1.style.position = 'absolute';
-box1.style.top = '1050px';
+box1.style.top = '350px';
+
+
+const nicname = document.createElement('div');
+box1.appendChild(nicname);
+const boxContaier = document.createElement('div');
+box1.appendChild(boxContaier);
+const img2 = document.createElement('div');
+boxContaier.appendChild(img2);
+const text2 = document.createElement('div');
+boxContaier.appendChild(text2);
+
+nicname.setAttribute('id','nicname');
+boxContaier.setAttribute('id','boxContaier');
+img2.setAttribute('id','img2');
+text2.setAttribute('id','text2');
+
+nicname.style.width = '100%'
+nicname.style.height = '15%';
+boxContaier.style.width = '100%'
+boxContaier.style.height = '85%';
+boxContaier.style.display = 'flex';
+
+
+img2.style.width = '40%';
+img2.style.height ='100%';
+
+text2.style.width = '60%';
+text2.style.height ='100%';
+
+nicname.textContent ='이름';
+img2.textContent='사진넣을거임';
+text2.textContent='텍스트넣을거임';
+
+//---------------------박스2
+const box2 =document.createElement('div');
+main.appendChild(box2);
+box2.setAttribute('id','box2');
+
+box2.style.backgroundColor='powderblue';
+box2.style.width = '768px';
+box2.style.height ='50%';
+box2.style.position = 'absolute';
+box2.style.top = '500px';
+
+
+const nicname2 = document.createElement('div');
+box2.appendChild(nicname2);
+const boxContaier2 = document.createElement('div');
+box2.appendChild(boxContaier2);
+const img3 = document.createElement('div');
+boxContaier2.appendChild(img3);
+const text3 = document.createElement('div');
+boxContaier2.appendChild(text3);
+
+nicname2.setAttribute('id','nicname2');
+boxContaier2.setAttribute('id','boxContaier2');
+img3.setAttribute('id','img3');
+text3.setAttribute('id','text3');
+
+nicname2.style.width = '100%'
+nicname2.style.height = '15%';
+boxContaier2.style.width = '100%'
+boxContaier2.style.height = '85%';
+boxContaier2.style.display = 'flex';
+
+
+img3.style.width = '40%';
+img3.style.height ='100%';
+
+text3.style.width = '60%';
+text3.style.height ='100%';
+
+nicname2.textContent ='이름';
+img3.textContent='사진넣을거임';
+text3.textContent='텍스트넣을거임';
+
+
+
+
+
 
 
 
