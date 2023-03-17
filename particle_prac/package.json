@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "tsparticles-engine": "^2.9.3"
+  },
+  "name": "particle_prac",
+  "version": "1.0.0",
+  "description": "\"연습\"",
+  "main": "add.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
